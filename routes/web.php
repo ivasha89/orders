@@ -13,5 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/hi', 'SpaController@hi');
+Route::get('/tarifs', 'SpaController@tarifs');
+Route::get('/orders', 'SpaController@orders');
+Route::post('/makeorder', 'SpaController@makeOrder');
 Route::get('/{any}', 'SpaController@index')->where('any', '.*');
